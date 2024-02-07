@@ -1,0 +1,11 @@
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.csproj.AssemblyReference.cache
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.Formulaire.GestionnaireClient.resources
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.Properties.Resources.resources
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.csproj.GenerateResource.cache
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.Form1.resources
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\bin\Debug\GestionComptesBanquaires.exe.config
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\bin\Debug\GestionComptesBanquaires.exe
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\bin\Debug\GestionComptesBanquaires.pdb
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.exe
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.pdb
