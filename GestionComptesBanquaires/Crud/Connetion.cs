@@ -29,7 +29,7 @@ namespace GestionComptesBanquaires
                     connect.Open();
                     MessageBox.Show("Connexion ouverte avec succès.");
                 return connect;
-            }
+                }
                 catch (SqlException ex)
                 {
                     // Gérer les erreurs de connexion
@@ -37,8 +37,8 @@ namespace GestionComptesBanquaires
                   return null;
                 }
         }
-
-
-        
+  
     }
 }
+
+

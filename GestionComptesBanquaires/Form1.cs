@@ -23,5 +23,21 @@ namespace GestionComptesBanquaires
             GestionnaireClient gestionnaireClient = new GestionnaireClient();
             gestionnaireClient.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Êtes-vous sûr de vouloir fermer le formulaire ?", "Confirmation de fermeture", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GestionnaireCompte gestionnaireCompte = new GestionnaireCompte();
+            gestionnaireCompte.Show();
+        }
     }
 }

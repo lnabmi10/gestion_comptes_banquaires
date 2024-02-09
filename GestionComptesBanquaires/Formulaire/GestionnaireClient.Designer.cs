@@ -37,14 +37,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.ajouterClient = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.supprimerClient = new System.Windows.Forms.Button();
+            this.modifierClient = new System.Windows.Forms.Button();
+            this.dataClients = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumeroTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.fermer = new System.Windows.Forms.Button();
+            this.vider = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
             // ClientNom
@@ -121,36 +123,38 @@
             this.ajouterClient.UseVisualStyleBackColor = true;
             this.ajouterClient.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // supprimerClient
             // 
-            this.button2.Location = new System.Drawing.Point(320, 229);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.supprimerClient.Location = new System.Drawing.Point(271, 229);
+            this.supprimerClient.Name = "supprimerClient";
+            this.supprimerClient.Size = new System.Drawing.Size(75, 23);
+            this.supprimerClient.TabIndex = 9;
+            this.supprimerClient.Text = "supprimer";
+            this.supprimerClient.UseVisualStyleBackColor = true;
+            this.supprimerClient.Click += new System.EventHandler(this.supprimerClient_Click);
             // 
-            // button3
+            // modifierClient
             // 
-            this.button3.Location = new System.Drawing.Point(528, 229);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.modifierClient.Location = new System.Drawing.Point(389, 229);
+            this.modifierClient.Name = "modifierClient";
+            this.modifierClient.Size = new System.Drawing.Size(75, 23);
+            this.modifierClient.TabIndex = 10;
+            this.modifierClient.Text = "modifier";
+            this.modifierClient.UseVisualStyleBackColor = true;
+            this.modifierClient.Click += new System.EventHandler(this.modifierClient_Click);
             // 
-            // dataGridView1
+            // dataClients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nom,
             this.Prenom,
             this.NumeroTel});
-            this.dataGridView1.Location = new System.Drawing.Point(126, 297);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(602, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.dataClients.Location = new System.Drawing.Point(126, 297);
+            this.dataClients.Name = "dataClients";
+            this.dataClients.Size = new System.Drawing.Size(602, 150);
+            this.dataClients.TabIndex = 11;
             // 
             // ID
             // 
@@ -172,14 +176,36 @@
             this.NumeroTel.HeaderText = "NumeroTel";
             this.NumeroTel.Name = "NumeroTel";
             // 
-            // GestionClient
+            // fermer
+            // 
+            this.fermer.Location = new System.Drawing.Point(630, 229);
+            this.fermer.Name = "fermer";
+            this.fermer.Size = new System.Drawing.Size(75, 23);
+            this.fermer.TabIndex = 12;
+            this.fermer.Text = "fermer";
+            this.fermer.UseVisualStyleBackColor = true;
+            this.fermer.Click += new System.EventHandler(this.fermer_Click);
+            // 
+            // vider
+            // 
+            this.vider.Location = new System.Drawing.Point(493, 229);
+            this.vider.Name = "vider";
+            this.vider.Size = new System.Drawing.Size(75, 23);
+            this.vider.TabIndex = 13;
+            this.vider.Text = "vider";
+            this.vider.UseVisualStyleBackColor = true;
+            this.vider.Click += new System.EventHandler(this.vider_Click);
+            // 
+            // GestionnaireClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.vider);
+            this.Controls.Add(this.fermer);
+            this.Controls.Add(this.dataClients);
+            this.Controls.Add(this.modifierClient);
+            this.Controls.Add(this.supprimerClient);
             this.Controls.Add(this.ajouterClient);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -189,9 +215,10 @@
             this.Controls.Add(this.ClientTel);
             this.Controls.Add(this.ClientPrenom);
             this.Controls.Add(this.ClientNom);
-            this.Name = "GestionClient";
+            this.Name = "GestionnaireClient";
             this.Text = "GestionClient";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.GestionnaireClient_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,12 +235,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button ajouterClient;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button supprimerClient;
+        private System.Windows.Forms.Button modifierClient;
+        private System.Windows.Forms.DataGridView dataClients;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumeroTel;
+        private System.Windows.Forms.Button fermer;
+        private System.Windows.Forms.Button vider;
     }
 }

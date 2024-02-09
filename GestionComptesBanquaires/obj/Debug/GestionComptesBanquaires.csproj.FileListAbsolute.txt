@@ -9,3 +9,4 @@ C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\
 C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\bin\Debug\GestionComptesBanquaires.pdb
 C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.exe
 C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.pdb
+C:\Users\Mohamed\source\repos\GestionComptesBanquaires\GestionComptesBanquaires\obj\Debug\GestionComptesBanquaires.Formulaire.GestionnaireCompte.resources

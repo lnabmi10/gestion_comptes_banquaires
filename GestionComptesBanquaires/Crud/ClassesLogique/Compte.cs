@@ -9,20 +9,20 @@ namespace GestionComptesBanquaires.Crud.ClassesLogique
     internal class Compte
     {
         // Propriétés privées de la classe Compte
-        private int compteId;
-        private int clientId;
-        private decimal solde;
-        private string typeCompte;
-        private DateTime dateOuverture;
+        public int CompteId;
+        public int ClientId;
+        public decimal Solde;
+        public string TypeCompte;
+        public DateTime DateOuverture;
 
         // Constructeur de la classe Compte
         public Compte(int compteId, int clientId, decimal solde, string typeCompte, DateTime dateOuverture)
         {
-            this.compteId = compteId;
-            this.clientId = clientId;
-            this.solde = solde;
-            this.typeCompte = typeCompte;
-            this.dateOuverture = dateOuverture;
+            this.CompteId = compteId;
+            this.ClientId = clientId;
+            this.Solde = solde;
+            this.TypeCompte = typeCompte;
+            this.DateOuverture = dateOuverture;
         }
         public Compte() { }
 
